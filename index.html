@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Developer | emptydiv</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Анимированный курсор -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Интерактивный фон -->
+    <div class="interactive-bg" id="interactiveBg"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">empty<span>div</span></a>
+                <div class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#projects">Проекты</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Привет, я - <span>начинающий frontend разработчик</span></h1>
+                <p>Создаю современные, интерактивные и отзывчивые веб-приложения с использованием HTML, CSS и JavaScript. Превращаю идеи в цифровую реальность.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn">Мои проекты</a>
+                    <a href="#contact" class="btn btn-outline">Связаться со мной</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Обо мне</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Страсть к созданию цифрового опыта</h3>
+                    <p>Я начинающий frontend разработчик с глубоким интересом к созданию красивых и функциональных пользовательских интерфейсов. Мне нравится превращать сложные проблемы в простые, элегантные решения.</p>
+                    <p>Постоянно изучаю новые технологии и подходы, чтобы оставаться в курсе последних тенденций веб-разработки. Верю, что лучший код — это не только функциональный, но и читаемый, поддерживаемый и масштабируемый.</p>
+                    
+                    <div class="skills">
+                        <span class="skill">HTML5</span>
+                        <span class="skill">CSS3</span>
+                        <span class="skill">JavaScript</span>
+                        <span class="skill">Git</span>
+                        <span class="skill">Responsive Design</span>
+                        <span class="skill">Bootstrap</span>
+                        <span class="skill">Webpack</span>
+                        <span class="skill">TypeScript</span>
+                        <span class="skill">Figma</span>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <div class="window-buttons">
+                                <div class="window-button"></div>
+                                <div class="window-button"></div>
+                                <div class="window-button"></div>
+                            </div>
+                            <div class="window-title">about-me.js</div>
+                        </div>
+                        <div class="code-content">
+                            <div class="code-line"><span class="code-tag">const</span> <span class="code-attr">developer</span> = {</div>
+                            <div class="code-line">&nbsp;&nbsp;<span class="code-attr">name</span>: <span class="code-string">"Ваше Имя"</span>,</div>
+                            <div class="code-line">&nbsp;&nbsp;<span class="code-attr">role</span>: <span class="code-string">"Frontend Developer"</span>,</div>
+                            <div class="code-line">&nbsp;&nbsp;<span class="code-attr">passion</span>: [</div>
+                            
+                            <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">"Решение сложных задач"</span>,</div>
+                            <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">"Изучение новых технологий"</span></div>
+                            <div class="code-line">&nbsp;&nbsp;],</div>
+                            <div class="code-line">&nbsp;&nbsp;<span class="code-attr">skills</span>: {</div>
+                            <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-attr">frontend</span>: [<span class="code-string">"HTML"</span>, <span class="code-string">"CSS"</span>, <span class="code-string">"JavaScript"</span><span class="code-string"></span>],</div>
+                            <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-attr">tools</span>: [<span class="code-string">"Git"</span>, <span class="code-string">"VS Code"</span>, <span class="code-string">"Figma"</span>]</div>
+                            <div class="code-line">&nbsp;&nbsp;}</div>
+                            <div class="code-line">};</div>
+                            <div class="code-line"><span class="code-comment">// Готов к новым вызовам!</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>Мои проекты</h2>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="img/2025-12-07_21-58-07.png" alt="" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Интерактивное портфолио</h3>
+                        <p class="project-description">Анимированное портфолио с параллакс эффектами и плавными переходами, созданное на чистом CSS и JavaScript.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a target="_blank" href="https://emptydiv.github.io/anastieshaproject/" class="project-link"><i class="fas fa-external-link-alt"></i> Демо</a>
+                            <a target="_blank" href="https://github.com/emptydiv/anastieshaproject" class="project-link"><i class="fab fa-github"></i> Код</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img src="img/2026-01-10_16-47-39.png" alt="" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Мини-игра "rock_paper_scissors"</h3>
+                        <p class="project-description">Простая, известная и понятная игра для любого человека. Создана мной в рамках обучения.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a target="_blank" href="https://emptydiv.github.io/rock_paper_scissors/" class="project-link"><i class="fas fa-external-link-alt"></i> Демо</a>
+                            <a target="_blank" href="https://github.com/emptydiv/rock_paper_scissors" class="project-link"><i class="fab fa-github"></i> Код</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <img src="img/2025-12-07_22-04-31.png" alt="" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Адаптивный лендинг</h3>
+                        <p class="project-description">Современный лендинг для компании с адаптивным дизайном, оптимизированный для всех устройств. <br>| PS. недоделанный проект из-за отказа заказчика(</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a target="_blank" href="https://emptydiv.github.io/MINIMALJEWELRY/" class="project-link"><i class="fas fa-external-link-alt"></i> Демо</a>
+                            <a target="_blank" href="https://github.com/emptydiv/MINIMALJEWELRY" class="project-link"><i class="fab fa-github"></i> Код</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="projects-grid">
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <img src="img/2026-01-10_18-35-43.png" alt="" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">SHoCoLab - Сибирский крафтовый шоколад</h3>
+                        <p class="project-description">Сайт о студии "SHoCoLab", создающей шоколад в глубинах сибири, обычный сайт, интересное отличие от других моих проектов - реализация полноценного ассистента. Проект также создан в рамках обучения.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a target="_blank" href="https://emptydiv.github.io/SHoCoLab/" class="project-link"><i class="fas fa-external-link-alt"></i> Демо</a>
+                            <a target="_blank" href="https://github.com/emptydiv/SHoCoLab" class="project-link"><i class="fab fa-github"></i> Код</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <img src="img/IMG_0342.PNG" alt="" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title"></h3>
+                        <p class="project-description"></p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a target="_blank" href="" class="project-link"><i class="fas fa-external-link-alt"></i> Демо</a>
+                            <a target="_blank" href="" class="project-link"><i class="fab fa-github"></i> Код</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6x -->
+                <div class="project-card">
+                    <img src="img/IMG_0342.PNG" alt="" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title"></h3>
+                        <p class="project-description"></p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a target="_blank" href="" class="project-link"><i class="fas fa-external-link-alt"></i> Демо</a>
+                            <a target="_blank" href="" class="project-link"><i class="fab fa-github"></i> Код</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="contact-section">
+                <div class="contact-content">
+                    <h2>Давайте создадим что-то вместе!</h2>
+                    <p>Я открыт для новых возможностей и сотрудничества. Если у вас есть проект, который вы хотите начать, или просто хотите поздороваться, свяжитесь со мной!</p>
+                    <a href="mailto:emptydiv@gmail.com" class="btn">Написать мне</a>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/emptydiv" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://t.me/emptydiv" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="https://wa.me/message/RQODDBVERJWUE1" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.tiktok.com/@emptydiv0?_r=1&_t=ZN-92xToiNUu50" class="social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <a href="#" class="footer-logo">empty<span>div</span></a>
+                <ul class="footer-links">
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#projects">Проекты</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+                <p class="copyright">© 2026 Frontend Developer. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
