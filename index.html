@@ -233,7 +233,328 @@
             </div>
         </div>
     </section>
+<!-- Добавьте этот код сразу после блока "Моих проектов" -->
+<section id="pricing" class="pricing">
+    <div class="container">
+        <h2 class="section-title">Стоимость услуг</h2>
+        <p class="section-subtitle">Прозрачное ценообразование для вашего проекта</p>
 
+        <div class="pricing-grid">
+            <!-- Карточка 1: Лендинг -->
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3 class="pricing-title">Лендинг</h3>
+                    <div class="pricing-price">
+                        <span class="price">от 25 000 ₽</span>
+                        <span class="period">/ один проект</span>
+                    </div>
+                </div>
+                <div class="pricing-features">
+                    <ul>
+                        <li>1 уникальная страница</li>
+                        <li>Адаптивная верстка</li>
+                        <li>Базовая SEO-оптимизация</li>
+                        <li>Контактная форма</li>
+                        <li>Интеграция с соцсетями</li>
+                        <li>Срок: 5-7 дней</li>
+                    </ul>
+                </div>
+                <div class="pricing-cta">
+                    <a href="#contact" class="btn btn-outline">Заказать</a>
+                </div>
+            </div>
+
+            <!-- Карточка 2: Корпоративный сайт -->
+            <div class="pricing-card featured">
+                <div class="pricing-badge">Популярно</div>
+                <div class="pricing-header">
+                    <h3 class="pricing-title">Корпоративный сайт</h3>
+                    <div class="pricing-price">
+                        <span class="price">от 50 000 ₽</span>
+                        <span class="period">/ один проект</span>
+                    </div>
+                </div>
+                <div class="pricing-features">
+                    <ul>
+                        <li>5-10 страниц</li>
+                        <li>Индивидуальный дизайн</li>
+                        <li>Админ-панель</li>
+                        <li>Полная SEO-оптимизация</li>
+                        <li>Интеграция аналитики</li>
+                        <li>Срок: 14-21 день</li>
+                    </ul>
+                </div>
+                <div class="pricing-cta">
+                    <a href="#contact" class="btn btn-primary">Заказать</a>
+                </div>
+            </div>
+
+            <!-- Карточка 3: Frontend-разработка -->
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3 class="pricing-title">Frontend поддержка</h3>
+                    <div class="pricing-price">
+                        <span class="price">от 1 500 ₽</span>
+                        <span class="period">/ час</span>
+                    </div>
+                </div>
+                <div class="pricing-features">
+                    <ul>
+                        <li>Доработка существующих проектов</li>
+                        <li>Оптимизация производительности</li>
+                        <li>Исправление багов</li>
+                        <li>Добавление новых функций</li>
+                        <li>Кроссбраузерная верстка</li>
+                        <li>Консультации</li>
+                    </ul>
+                </div>
+                <div class="pricing-cta">
+                    <a href="#contact" class="btn btn-outline">Обсудить проект</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="pricing-notice">
+            <p>Все цены являются ориентировочными. Точная стоимость рассчитывается индивидуально после обсуждения деталей проекта.</p>
+            <a href="#contact" class="btn btn-secondary">Получить точный расчет</a>
+        </div>
+    </div>
+</section>
+
+<style>
+/* Стили для блока pricing */
+.pricing {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.pricing .container {
+    position: relative;
+    z-index: 1;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.pricing-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    color: #333;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+}
+
+.pricing-card.featured {
+    transform: scale(1.05);
+    border: 2px solid #667eea;
+}
+
+.pricing-card.featured:hover {
+    transform: scale(1.05) translateY(-10px);
+}
+
+.pricing-badge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background: #667eea;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.pricing-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.pricing-price {
+    font-size: 2.5rem;
+    color: #667eea;
+    font-weight: bold;
+}
+
+.pricing-price .period {
+    display: block;
+    font-size: 1rem;
+    color: #666;
+    font-weight: normal;
+    margin-top: 0.5rem;
+}
+
+.pricing-features {
+    margin-bottom: 2rem;
+}
+
+.pricing-features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pricing-features li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    align-items: center;
+}
+
+.pricing-features li:before {
+    content: "✓";
+    color: #667eea;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.pricing-features li:last-child {
+    border-bottom: none;
+}
+
+.pricing-cta {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #667eea;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #5a67d8;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-outline {
+    border: 2px solid #667eea;
+    color: #667eea;
+    background: white;
+}
+
+.btn-outline:hover {
+    background: #667eea;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: white;
+    color: #667eea;
+}
+
+.btn-secondary:hover {
+    background: #f8f9fa;
+    transform: translateY(-2px);
+}
+
+.pricing-notice {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.pricing-notice p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .pricing-card.featured {
+        transform: none;
+    }
+    
+    .pricing-card.featured:hover {
+        transform: translateY(-10px);
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+}
+</style>
+
+<script>
+// Плавная прокрутка для кнопок "Заказать"
+document.addEventListener('DOMContentLoaded', function() {
+    const orderButtons = document.querySelectorAll('.pricing-cta a');
+    
+    orderButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const contactSection = document.getElementById('contact');
+            if (contactSection) {
+                contactSection.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+});
+</script>
     <!-- Contact Section -->
     <section class="section" id="contact">
         <div class="container">
@@ -273,4 +594,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
